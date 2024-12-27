@@ -1,0 +1,7 @@
+version = 1
+requires-python = ">=3.10"
+
+[[package]]
+name = "instruct-glm-llama-3-3"
+version = "0.1.0"
+source = { virtual = "." }
