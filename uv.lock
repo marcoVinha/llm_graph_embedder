@@ -160,6 +160,19 @@ wheels = [
 ]
 
 [[package]]
+name = "bitsandbytes"
+version = "0.45.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "numpy" },
+    { name = "torch" },
+]
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/e4/26/0897c35865a6d7a04b05af5d59558484fda14fa26e5ec922a3bb8d3e0d18/bitsandbytes-0.45.1-py3-none-manylinux_2_24_x86_64.whl", hash = "sha256:f9f6a38b3fccd012549f875e4f371a47c515c4394df7a488dec65faa14465323", size = 69679919 },
+    { url = "https://files.pythonhosted.org/packages/f1/36/022554463c267f2e3152a17a8bbd979cbf5ae19163bc6958796ddd2d6443/bitsandbytes-0.45.1-py3-none-win_amd64.whl", hash = "sha256:3f5b8c982ae475a7fee2f21c2b1e7835d212da0db10bb5e270a3508614ee2cf9", size = 69124162 },
+]
+
+[[package]]
 name = "black"
 version = "24.10.0"
 source = { registry = "https://pypi.org/simple" }
@@ -713,6 +726,7 @@ version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
     { name = "accelerate" },
+    { name = "bitsandbytes" },
     { name = "black", extra = ["jupyter"] },
     { name = "datasets" },
     { name = "ipykernel" },
@@ -724,11 +738,13 @@ dependencies = [
     { name = "torch" },
     { name = "torch-geometric" },
     { name = "transformers" },
+    { name = "trl" },
 ]
 
 [package.metadata]
 requires-dist = [
     { name = "accelerate", specifier = ">=1.2.1" },
+    { name = "bitsandbytes", specifier = ">=0.45.1" },
     { name = "black", extras = ["jupyter"], specifier = ">=24.10.0" },
     { name = "datasets", specifier = ">=3.2.0" },
     { name = "ipykernel", specifier = ">=6.29.5" },
@@ -740,6 +756,7 @@ requires-dist = [
     { name = "torch", specifier = ">=2.5.1" },
     { name = "torch-geometric", specifier = ">=2.6.1" },
     { name = "transformers", specifier = ">=4.47.1" },
+    { name = "trl", specifier = ">=0.13.0" },
 ]
 
 [[package]]
@@ -2099,6 +2116,21 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/98/29/69aa56dc0b2eb2602b553881e34243475ea2afd9699be042316842788ff5/triton-3.1.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:6b0dd10a925263abbe9fa37dcde67a5e9b2383fc269fdf59f5657cac38c5d1d8", size = 209460013 },
     { url = "https://files.pythonhosted.org/packages/86/17/d9a5cf4fcf46291856d1e90762e36cbabd2a56c7265da0d1d9508c8e3943/triton-3.1.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:0f34f6e7885d1bf0eaaf7ba875a5f0ce6f3c13ba98f9503651c1e6dc6757ed5c", size = 209506424 },
     { url = "https://files.pythonhosted.org/packages/78/eb/65f5ba83c2a123f6498a3097746607e5b2f16add29e36765305e4ac7fdd8/triton-3.1.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:c8182f42fd8080a7d39d666814fa36c5e30cc00ea7eeeb1a2983dbb4c99a0fdc", size = 209551444 },
+]
+
+[[package]]
+name = "trl"
+version = "0.13.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "accelerate" },
+    { name = "datasets" },
+    { name = "rich" },
+    { name = "transformers" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/43/64/db31b6acdeb0b40a59374601e7a032d4efab872a15d3a2fc24fc7d67db08/trl-0.13.0.tar.gz", hash = "sha256:ad3259098457b92a94f95de6da4138807c846919beacccf22d26ac238987b50b", size = 300701 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/01/4b/73924544701445ee8cb55cce80a5917242d6f8a6f16c76408e29111209d7/trl-0.13.0-py3-none-any.whl", hash = "sha256:792aa68a98821934a890182c842f9f8b43127eea510a7c2bd660a10bc59de7e8", size = 293448 },
 ]
 
 [[package]]
