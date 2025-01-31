@@ -10,3 +10,14 @@ This repository explores the use of Instruction Tuning to fine-tune the Gemma 2 
 - To evaluate if bare bones LLMs can be helpful when solving graph-related tasks.
 - To explore the potential of using Instruction Tuning for adapting Gemma 2 2b-it to graph-related tasks.
 - To evaluate the model’s ability to handle graph-specific problems after fine-tuning.
+
+### Running the code
+
+To be able to reproduce the notebook in this repo in a Python environment with the same requirements listed here:
+
+- Install Python 3.10
+- Install `uv` to manage the deps
+- Run `uv sync`
+- This will create a virtual environment in the `.venv/ dir`
+- Use this virtual environment to run any Python code for this project
+- Execute the single notebook inside the `notebooks/` directory
